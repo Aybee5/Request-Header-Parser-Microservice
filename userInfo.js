@@ -7,6 +7,6 @@ app.get('/api/whoami', (req, res)=>{
     '').split(',')[0].trim();
     var preferredLanguage = req.headers['accept-language']
     var sysInfo = req.headers['user-agent']
-    res.status(200).json({ipaddress: ip, Language: preferredLanguage, software: sysInfo})
+    res.status(200).json({ipaddress: ip, language: preferredLanguage, software: sysInfo})
 })
 module.exports = app;
